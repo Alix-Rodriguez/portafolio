@@ -149,9 +149,9 @@ export default function Home() {
 
           </div>
 
-          <div style={{ background: `url("image/nosotros.jpg")` }} className='h-screen flex items-center justify-center sizeImage bg-no-repeat w-full lg:w-2/4'>
+          <div style={{ background: `url("image/nosotros.jpg")` }} className='h-screen relative flex items-center justify-center sizeImage bg-no-repeat w-full lg:w-2/4'>
 
-            <div className='h-full w-full lg:w-2/4 absolute fondoColor-black'></div>
+            <div className='h-full top-0  w-full  absolute fondoColor-black'></div>
 
             <div className="glass flex text-justify justify-center items-center">
 
