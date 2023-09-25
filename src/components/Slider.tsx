@@ -86,6 +86,7 @@ export const Slider = () => {
                 modules={[Pagination, Navigation]}
                 data-swiper-autoplay="100"
                 className="mySwiper swiper-slide"
+                id="up"
             >
                 {slider.map((sli) => (
                     <SwiperSlide key={sli.id}>

@@ -2,7 +2,7 @@ import Image from "next/image"
 import { useState } from "react"
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GrClose } from "react-icons/gr";
-
+import Link from 'next/link'
 
 export const Menu = () => {
 
@@ -37,13 +37,23 @@ export const Menu = () => {
 
         <div className=" w-full h-20 hidden md:flex justify-center items-center">
           <ul className="text-white flex w-11/12 justify-between items-center">
-            <li>INICIO</li>
-            <li>NOSOTROS</li>
-            <li>
-              <Image src="/logo/logo3.png" alt="logo" width={180} height={60} />
+            <Link href='#inicio'>
+              <li>INICIO</li>
+            </Link>
+            <Link href='#nosotros'>
+              <li>NOSOTROS</li>
+            </Link>
+            <Link href='#up'>
+              <li>
+                <Image src="/logo/logo3.png" alt="logo" width={180} height={60} />
             </li>
-            <li>SERVICIOS</li>
-            <li>CONTACTO</li>
+            </Link>
+            <Link href='#servicio'>
+              <li>SERVICIOS</li>
+            </Link>
+            <Link href='#contacto'>
+              <li>CONTACTO</li>
+            </Link>
           </ul>
         </div>
       </nav>

@@ -5,7 +5,7 @@ import Typewriter from 'typewriter-effect';
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 
 
@@ -16,7 +16,6 @@ const gradiant = {
 
 export default function Home() {
 
-  const [width, setWidth] = useState(true);
 
   
   useEffect(() => {
@@ -43,14 +42,7 @@ export default function Home() {
     
     });
 
-    function handleResize() {
-      if (window.innerWidth > 768) {
-        setWidth(false);
-        console.log(window.innerWidth)
-      }
-    }
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+   
     
   }, []);
 
@@ -72,7 +64,7 @@ export default function Home() {
 
 
       {/* PRIMERA SECCION */}
-      <section style={gradiant} className='text-white h-full lg:h-screen'>
+      <section id='inicio' style={gradiant} className='text-white h-full lg:h-screen'>
       
 
         <div className='flex justify-center pt-7'>
@@ -94,19 +86,19 @@ export default function Home() {
 
         <div  className='flex flex-col py-5 lg:flex-row gap-y-9 h-4/5 items-center lg:gap-x-4 px-5 sm:px-11 w-full'>
 
-          <div data-aos={`${width ? 'zoom-in' : 'fade-right'}`}  className='border-4 shadow-2xl h-[90%] rounded-sm borde-inset p-7  flex justify-center flex-col items-center gap-y-10'>
+          <div data-aos={`zoom-out-right`}  className='border-4 shadow-2xl h-[90%] rounded-sm borde-inset p-7  flex justify-center flex-col items-center gap-y-10'>
             <Image src='icon/compu.svg' alt="Computadora" width={70} height={70} ></Image>
             <h2 className='titulo capitalize font-bold text-lg ' >Desarrollo web</h2>
             <h4 className='subtitulo w-11/12 text-center'>Nuestro equipo de trabajo puede desarrollar desde páginas tipo catálogo, las cuales muestran sus productos de una forma sencilla y efectiva, hasta sitios web en varios idiomas, todo de acuerdo con sus necesidades.</h4>
           </div>
 
-          <div  data-aos={`${width ? 'zoom-out-right' : 'fade-down'}`}  className='border-4 shadow-2xl h-[90%] rounded-sm borde-inset p-7  flex justify-center flex-col items-center gap-y-10'>
+          <div  data-aos={`zoom-in`}  className='border-4 shadow-2xl h-[90%] rounded-sm borde-inset p-7  flex justify-center flex-col items-center gap-y-10'>
             <Image src='icon/diseño.svg' alt="Diseño" width={70} height={70} ></Image>
             <h2 className='titulo capitalize font-bold text-lg '>Diseño a la medida</h2>
             <h4 className='w-11/12 subtitulo text-center'>¡Descubre el poder de un buen diseño web con nuestro servicio! En nuestro sitio, transformamos tus ideas en realidad digital. Nos especializamos en crear sitios web atractivos, intuitivos y de alto rendimiento que capturan la esencia de tu negocio y conectan con tus clientes.</h4>
           </div>
 
-          <div  data-aos={`${width ? 'fade-down' : 'fade-left'}`} className='border-4 shadow-2xl h-[90%] rounded-sm borde-inset p-7  flex justify-center flex-col items-center gap-y-10'>
+          <div  data-aos={`fade-down`} className='border-4 shadow-2xl h-[90%] rounded-sm borde-inset p-7  flex justify-center flex-col items-center gap-y-10'>
             <Image src='icon/google.svg' alt="Google" width={70} height={70} ></Image>
             <h2 className='titulo capitalize font-bold text-lg '>Seo</h2>
             <h4 className='w-11/12 subtitulo text-center'>¡Eleva tu negocio con nuestro servicio de SEO para Google! Optimizamos tu sitio con palabras clave relevantes, mejorando tu posición en los resultados de búsqueda y atrayendo más clientes. ¡Contáctanos hoy!</h4>
@@ -120,7 +112,7 @@ export default function Home() {
 
       {/* SEGUNDO SECCION */}
 
-      <section style={{ background: `url("image/galaxia.png")` }} className='text-white pb-3 relative h-full lg:h-screen'>
+      <section id="servicio" style={{ background: `url("image/galaxia.png")` }} className='text-white pb-3 relative h-full lg:h-screen'>
 
         <div className='h-full lg:h-screen w-full absolute fondoColor'></div>
 
@@ -174,7 +166,7 @@ export default function Home() {
 
       {/* TERCERA SECCION */}
 
-      <section className='h-full lg:h-screen relative'>
+      <section id='nosotros' className='h-full lg:h-screen relative'>
 
         <div className='flex justify-center z-[2] text-white relative pt-7'>
           <h1 className='titulo capitalize text-xl sm:text-3xl font-semibold'>

@@ -147,3 +147,36 @@ html, body {
     }
 
 }
+
+.swiper-button-next {
+    color: transparent !important;
+    width: 50px !important;
+    font-weight: 300;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    padding-top: 10rem !important;
+    transform: rotate(180deg);
+    background-image: url("/image/nav-arrow.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .swiper-button-prev {
+    color: transparent !important;
+    width: 50px !important;
+    font-weight: 300;
+    margin-left: 0.5vw;
+    padding-top: 10rem !important;
+    margin-top: 0.5vw;
+    background-image: url("/image/nav-arrow.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: aliceblue !important;
+  }
+  .swiper-pagination-bullet {
+    border: 3px solid #fff;
+  }
+  .swiper-pagination {
+    margin-bottom: 2.5rem;
+  }
