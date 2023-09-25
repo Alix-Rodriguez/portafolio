@@ -27,7 +27,7 @@ const slider = [
     {
         id: 2,
         fondo: {
-            backgroundImage: `url('image/5.png')`
+            backgroundImage: `url('image/5.jpg')`
         },
         texto: 'Innovación a tu alcance',
     },

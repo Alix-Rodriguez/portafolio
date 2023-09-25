@@ -19,6 +19,10 @@ html, body {
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
+/* TODO: PARA TITULO DE DISEÑO font-family: 'Bevan', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
+
 .titulo {
     font-family: 'Roboto Mono', monospace;
 }
@@ -27,6 +31,16 @@ html, body {
     font-family: 'Inconsolata', monospace;
 }
 
+.subtitulo_diseno {
+    font-family: 'Bevan', serif;
+}
+
+.text_shadow_ps {
+    text-shadow: 2px -8px 1px #a2125d;
+}
+.text_shadow_cv {
+    text-shadow: 2px -8px 1px #6c10c3;
+}
 
 
 .glass-menu {
