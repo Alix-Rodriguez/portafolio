@@ -62,7 +62,7 @@ export default function Home() {
 
 
       {/* PRIMERA SECCION */}
-      <section id='inicio' style={{ background: `url("image/galaxia.png")` }} className='text-white relative h-full'>
+      <section id='inicio' style={{ background: `url("image/galaxia.png")` }} className='text-white relative h-full border-t-2 border-black border-solid'>
           <div className='h-full  w-full rotate-180  absolute fondoColor-black'></div>
           <div className='h-full  w-full -rotate-180 absolute fondoColor'></div>
 
