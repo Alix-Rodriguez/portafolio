@@ -25,7 +25,7 @@ export const Menu = () => {
         </ul>
     </nav> */}
 
-      <nav style={{ background: ' #0e318fcf   ' }} className=" glass-menu w-full fixed z-[5]">
+      <nav style={{ background: ' #0e318fcf   ' }} className=" glass-menu w-full  z-[5]">
         <div className="glass-effect">
         </div>
 

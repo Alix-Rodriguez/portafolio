@@ -45,8 +45,9 @@ export const Slider = () => {
         <>
            
                         <div
-                            className="flex relative flex-col justify-center items-center leading-none h-screen w-screen bg-no-repeat bg-cover lg:bg-center "
-                            style={{backgroundImage: `url('image/start.gif')`}}
+                            className="flex relative flex-col justify-center items-center leading-none h-[80vh] w-screen bg-no-repeat 
+                             "
+                            style={{backgroundImage: `url('image/start.gif')`, backgroundSize: '100% 100%'}}
                         >
                             {/* <div className='h-full  w-full -rotate-180  absolute fondoColor-black'></div> */}
 
