@@ -19,25 +19,19 @@ const slider = [
         // fondo: {
         id: 1,
         fondo: {
-            backgroundImage: `url('image/6.png')`,
+            backgroundImage: `url('image/galaxia.png')`,
         },
-        texto: 'Tu puerta de entrada al mundo digital',
+        texto: 'Donde las ideas cobran vida',
         // }
     },
     {
         id: 2,
         fondo: {
-            backgroundImage: `url('image/5.jpg')`
+            backgroundImage: `url('image/oscuro.png')`
         },
         texto: 'Innovación a tu alcance',
     },
-    {
-        id: 3,
-        fondo: {
-            backgroundImage: `url('image/4.png')`
-        },
-        texto: 'Donde las ideas cobran vida',
-    }
+    
 ];
 
 
@@ -85,7 +79,7 @@ export const Slider = () => {
                 navigation={true}
                 modules={[Pagination, Navigation]}
                 data-swiper-autoplay="100"
-                className="mySwiper swiper-slide"
+                className="mySwiper swiper-slide border-b-2 border-black border-solid "
                 id="up"
             >
                 {slider.map((sli) => (
@@ -94,10 +88,10 @@ export const Slider = () => {
                             className="flex relative flex-col justify-center items-center leading-none h-screen w-screen bg-no-repeat bg-cover lg:bg-center "
                             style={sli.fondo}
                         >
-                            {/* <div className='h-full  w-full -rotate-180  absolute fondoColor-black'></div> */}
+                            <div className='h-full  w-full -rotate-180  absolute fondoColor-black'></div>
 
 
-                            <div data-aos="flip-down" className="vidrio flex flex-col">
+                            <div data-aos="flip-down" className="vidrio relative z-[2] flex flex-col">
 
                                 <div className="z-10 w-1/4 h-20 sm:h-44 sm:w-2/4 bg-cover absolute"
                                     style={{ backgroundImage: "url('image/marco.png')" }} ></div>
