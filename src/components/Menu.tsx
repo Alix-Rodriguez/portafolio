@@ -49,7 +49,7 @@ export const Menu = () => {
       </nav>
 
       {/* menu adaptado */}
-      <nav style={{ background: ' #0e318fcf   ' }} className={`bg-white z-[5] flex md:hidden flex-col rounded-ee-full lg:hidden justify-center  items-center opacity-95 fixed  h-screen w-screen 
+      <nav style={{ background: ' #0e318fcf   ' }} className={`bg-white z-[100] flex md:hidden flex-col rounded-ee-full lg:hidden justify-center  items-center opacity-95 fixed  h-screen w-screen 
           ${!click ? '' : '-translate-x-full'}`}>
 
           <a className=''>

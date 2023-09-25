@@ -5,7 +5,7 @@ import Typewriter from 'typewriter-effect';
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 
 
@@ -15,6 +15,8 @@ const gradiant = {
 
 
 export default function Home() {
+
+  const [width, setWidth] = useState(true);
 
   
   useEffect(() => {
@@ -40,6 +42,15 @@ export default function Home() {
       anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
     
     });
+
+    function handleResize() {
+      if (window.innerWidth > 768) {
+        setWidth(false);
+        console.log(window.innerWidth)
+      }
+    }
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
     
   }, []);
 
@@ -83,19 +94,19 @@ export default function Home() {
 
         <div  className='flex flex-col py-5 lg:flex-row gap-y-9 h-4/5 items-center lg:gap-x-4 px-5 sm:px-11 w-full'>
 
-          <div data-aos="fade-right" className='border-4 shadow-2xl h-[90%] rounded-sm borde-inset p-7  flex justify-center flex-col items-center gap-y-10'>
+          <div data-aos={`${width ? 'zoom-in' : 'fade-right'}`}  className='border-4 shadow-2xl h-[90%] rounded-sm borde-inset p-7  flex justify-center flex-col items-center gap-y-10'>
             <Image src='icon/compu.svg' alt="Computadora" width={70} height={70} ></Image>
             <h2 className='titulo capitalize font-bold text-lg ' >Desarrollo web</h2>
             <h4 className='subtitulo w-11/12 text-center'>Nuestro equipo de trabajo puede desarrollar desde páginas tipo catálogo, las cuales muestran sus productos de una forma sencilla y efectiva, hasta sitios web en varios idiomas, todo de acuerdo con sus necesidades.</h4>
           </div>
 
-          <div  data-aos="fade-down" className='border-4 shadow-2xl h-[90%] rounded-sm borde-inset p-7  flex justify-center flex-col items-center gap-y-10'>
+          <div  data-aos={`${width ? 'zoom-out-right' : 'fade-down'}`}  className='border-4 shadow-2xl h-[90%] rounded-sm borde-inset p-7  flex justify-center flex-col items-center gap-y-10'>
             <Image src='icon/diseño.svg' alt="Diseño" width={70} height={70} ></Image>
             <h2 className='titulo capitalize font-bold text-lg '>Diseño a la medida</h2>
             <h4 className='w-11/12 subtitulo text-center'>¡Descubre el poder de un buen diseño web con nuestro servicio! En nuestro sitio, transformamos tus ideas en realidad digital. Nos especializamos en crear sitios web atractivos, intuitivos y de alto rendimiento que capturan la esencia de tu negocio y conectan con tus clientes.</h4>
           </div>
 
-          <div data-aos="fade-left" className='border-4 shadow-2xl h-[90%] rounded-sm borde-inset p-7  flex justify-center flex-col items-center gap-y-10'>
+          <div  data-aos={`${width ? 'fade-down' : 'fade-left'}`} className='border-4 shadow-2xl h-[90%] rounded-sm borde-inset p-7  flex justify-center flex-col items-center gap-y-10'>
             <Image src='icon/google.svg' alt="Google" width={70} height={70} ></Image>
             <h2 className='titulo capitalize font-bold text-lg '>Seo</h2>
             <h4 className='w-11/12 subtitulo text-center'>¡Eleva tu negocio con nuestro servicio de SEO para Google! Optimizamos tu sitio con palabras clave relevantes, mejorando tu posición en los resultados de búsqueda y atrayendo más clientes. ¡Contáctanos hoy!</h4>
@@ -144,7 +155,7 @@ export default function Home() {
             <h4 className='lg:w-5/6 w-4/5 sm:w-4/6 leading-10  subtitulo lg:text-base md:text-sm text-center'>¡Descubre el poder de un buen diseño web con nuestro servicio! En nuestro sitio, transformamos tus ideas en realidad digital. Nos especializamos en crear sitios web atractivos, intuitivos y de alto rendimiento que capturan la esencia de tu negocio y conectan con tus clientes.</h4>
           </div>
 
-          <div data-aos="flip-up" className='border-4 lg:pt-5  relative shadow-2xl h-[80%] rounded-sm borde-outset py-14 lg:p-3   flex justify-center flex-col items-center gap-y-4 '>
+          <div data-aos="flip-left" className='border-4 lg:pt-5  relative shadow-2xl h-[80%] rounded-sm borde-outset py-14 lg:p-3   flex justify-center flex-col items-center gap-y-4 '>
             <Image className='-translate-y-9 top-0 absolute' src='icon/next.svg' alt="next" width={70} height={70} ></Image>
             <h2 className='titulo capitalize text-lg font-bold'>NextJS</h2>
             <h4 className='lg:w-5/6 w-4/5 sm:w-4/6 leading-10  subtitulo lg:text-base md:text-sm text-center'>¡Eleva tu negocio con nuestro servicio de SEO para Google! Optimizamos tu sitio con palabras clave relevantes, mejorando tu posición en los resultados de búsqueda y atrayendo más clientes. ¡Contáctanos hoy!</h4>
