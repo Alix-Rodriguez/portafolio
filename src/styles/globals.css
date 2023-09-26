@@ -144,7 +144,7 @@ body {
 
     .glass {
         position: relative;
-        width: 300px;
+        width: 350px;
         height: 450px;
         background: inherit;
         border-radius: 5%;
@@ -153,7 +153,7 @@ body {
 
     .glass::after {
         content: " ";
-        width: 300px;
+        width: 350px;
         height: 450px;
         background: inherit;
         position: absolute;

@@ -240,7 +240,7 @@ export default function Home() {
 
         {/* <div className='flex flex-col lg:flex-row w-full top-0 h-full absolute'> */}
 
-        <div className='h-screen flex flex-col items-center justify-center w-full '>
+        <div className='h-[60vh] lg:h-[80vh] flex flex-col items-center justify-center w-full '>
 
           <div data-aos="zoom-in-up" style={{ background: `url("image/fondo.png")` }} className="glass sizeImage  relative z-[3] flex text-justify justify-center items-center">
 
