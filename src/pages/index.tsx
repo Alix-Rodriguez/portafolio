@@ -6,6 +6,7 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { Footer } from '../components/Footer';
 
 
 
@@ -63,10 +64,10 @@ export default function Home() {
 
       {/* PRIMERA SECCION */}
       <section id='inicio' style={{ background: `url("image/galaxia.png")` }} className='text-white relative h-full border-t-2 border-black border-solid'>
-          <div className='h-full  w-full   absolute fondoColor'></div>
-          <div className='h-full  w-full -rotate-180 absolute fondoColor'></div>
+        <div className='h-full  w-full   absolute fondoColor'></div>
+        <div className='h-full  w-full -rotate-180 absolute fondoColor'></div>
 
-          
+
         <div className='text-white relative h-full lg:h-screen'>
 
 
@@ -117,7 +118,7 @@ export default function Home() {
 
         {/* SEGUNDO SECCION */}
 
-        <div id="servicio"  className='text-white pb-3 relative h-full lg:h-screen'>
+        <div id="servicio" className='text-white pb-3 relative h-full lg:h-screen'>
 
 
 
@@ -176,6 +177,7 @@ export default function Home() {
       <section id="servicio" style={{ background: `url("image/diseno.jpg")`, backgroundSize: ' 100% 100%' }} className='text-white pb-3  relative h-full lg:h-screen'>
 
         <div className='h-full lg:h-screen w-full absolute fondoColor'></div>
+        <div className='h-full  w-full rotate-180  absolute fondoColor-black'></div>
 
         <div className='flex justify-center z-[2] relative pt-7'>
           <h1 className='titulo capitalize text-xl sm:text-3xl font-semibold'>
@@ -215,7 +217,9 @@ export default function Home() {
 
       {/* CUARTA SECCION */}
 
-      <section id='nosotros' className='h-full lg:h-screen relative'>
+      <section style={{ background: `url("image/fondo.png")` }} id='nosotros' className='h-full pb-7 sizeImage relative'>
+        <div className='h-full  w-full   absolute fondoColor-black'></div>
+
 
         <div className='flex justify-center z-[2] text-white relative pt-7'>
           <h1 className='titulo capitalize text-xl sm:text-3xl font-semibold'>
@@ -234,45 +238,90 @@ export default function Home() {
           </h1>
         </div>
 
-        <div className='flex flex-col lg:flex-row w-full top-0 h-[76rem] lg:h-full absolute'>
+        {/* <div className='flex flex-col lg:flex-row w-full top-0 h-full absolute'> */}
 
-          <div style={{ background: `url("image/flayer.jpg")` }} className='h-screen w-full sizeImage lg:w-2/4'>
+        <div className='h-screen flex flex-col items-center justify-center w-full '>
 
-          </div>
+          <div data-aos="zoom-in-up" style={{ background: `url("image/fondo.png")` }} className="glass sizeImage  relative z-[3] flex text-justify justify-center items-center">
 
-          <div style={{ background: `url("image/nosotros.jpg")` }} className='h-screen relative flex items-center justify-center sizeImage bg-no-repeat w-full lg:w-2/4'>
-
-            <div className='h-full top-0  w-full  absolute fondoColor-black'></div>
-
-            <div className="glass  flex text-justify justify-center items-center">
-
-              <div data-aos="zoom-in-up" className="z-10 h-4/5 w-11/12  flex justify-center items-center">
-                <h3 className="subtitulo  leading-loose text-white font-bold text-xs sm:text-base capitalize">
-                  <Typewriter
-                    options={{
-                      loop: false,
-                    }}
-                    onInit={(typewriter) => {
-                      typewriter
-                        .typeString(`¡Bienvenido a su solución integral para el desarrollo web y el diseño gráfico!
-                        En Start - Tech, nos enorgullece ofrecer una amplia gama de servicios de programación en múltiples lenguajes y framework, como a AngularJS, ReactJS, NextJS, WordPress, y más. Nuestro equipo de expertos programadores está equipado con las habilidades y la experiencia necesarias para llevar sus ideas a la vida digital.
-                        también ofrecemos soluciones de diseño gráfico de alta calidad. Ya sea que necesite un logotipo llamativo, un diseño de interfaz de usuario intuitivo o ilustraciones personalizadas, nuestro equipo de diseñadores gráficos talentosos está listo para superar sus expectativas.
-                        `)
-                        .pauseFor(2000)
-                        .start();
-                    }}
-                  />
-                </h3>
-              </div>
-
+            <div className="z-10 h-4/5 w-11/12  flex justify-center items-center">
+              <h3 className="subtitulo  leading-loose text-white font-bold text-xs sm:text-base capitalize">
+                <Typewriter
+                  options={{
+                    loop: false,
+                  }}
+                  onInit={(typewriter) => {
+                    typewriter
+                      .typeString(`¡Bienvenido a su solución integral para el desarrollo web y el diseño gráfico!
+          En Start - Tech, nos enorgullece ofrecer una amplia gama de servicios de programación en múltiples lenguajes y framework, como a AngularJS, ReactJS, NextJS, WordPress, y más. Nuestro equipo de expertos programadores está equipado con las habilidades y la experiencia necesarias para llevar sus ideas a la vida digital.
+          también ofrecemos soluciones de diseño gráfico de alta calidad. Ya sea que necesite un logotipo llamativo, un diseño de interfaz de usuario intuitivo o ilustraciones personalizadas, nuestro equipo de diseñadores gráficos talentosos está listo para superar sus expectativas.
+          `)
+                      .pauseFor(2000)
+                      .start();
+                  }}
+                />
+              </h3>
             </div>
+
+          </div>
+        </div>
+
+        {/* creemos en la creación de soluciones digitales que no solo cumplen, sino que superan las expectativas de nuestros clientes. Ya sea que esté buscando desarrollar un sitio web desde cero, rediseñar un sitio web existente o crear gráficos impresionantes, Start - Tech es su socio confiable. */}
+
+        {/* </div> */}
+
+        {/* <div className='flex justify-center z-[2] text-white relative pt-7'>
+          <h1 className='titulo capitalize text-xl sm:text-3xl font-semibold'>
+            <Typewriter
+              options={{
+                loop: true,
+              }}
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("Trabajos Realizados")
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .start();
+              }}
+            />
+          </h1>
+        </div> */}
+
+
+
+        {/* <div className='flex  mt-10 lg:flex-row flex-col h-full lg:h-[60vh] items-center text-white gap-y-9 lg:gap-x-4 z-[2] relative px-5 sm:px-11 w-full'>
+
+          <div data-aos="flip-left" className='border-4 lg:pt-5 w-11/12 lg:w-2/5  shadow-2xl relative h-full lg:h-[50vh] rounded-sm borde-outset py-14 lg:p-3  flex justify-center flex-col items-center gap-y-4  '>
+            <Image className='-translate-y-9 top-0 absolute' src='icon/angular.svg' alt="angular" width={70} height={70} ></Image>
+            <h2 className='titulo capitalize text-lg font-bold' >AngularJS</h2>
+            <h4 className='subtitulo lg:w-5/6 w-4/5 sm:w-4/6 leading-10 lg:text-base md:text-sm text-center'>El revolucionario framework de JavaScript, creado por Google, que te permite desarrollar aplicaciones web dinámicas. ¡Impulsa tu productividad y lleva tus proyectos web al siguiente nivel con AngularJS!</h4>
           </div>
 
-          {/* creemos en la creación de soluciones digitales que no solo cumplen, sino que superan las expectativas de nuestros clientes. Ya sea que esté buscando desarrollar un sitio web desde cero, rediseñar un sitio web existente o crear gráficos impresionantes, Start - Tech es su socio confiable. */}
+        </div>
+        <div className='flex  mt-10 lg:flex-row flex-col h-full lg:h-[60vh] justify-end items-center text-white gap-y-9 lg:gap-x-4 z-[2] relative px-5 sm:px-11 w-full'>
+
+          <div data-aos="flip-left" className='border-4 lg:pt-5 w-11/12 lg:w-2/5  shadow-2xl relative h-full lg:h-[50vh] rounded-sm borde-outset py-14 lg:p-3  flex justify-center flex-col items-center gap-y-4  '>
+            <Image className='-translate-y-9 top-0 absolute' src='icon/angular.svg' alt="angular" width={70} height={70} ></Image>
+            <h2 className='titulo capitalize text-lg font-bold' >AngularJS</h2>
+            <h4 className='subtitulo lg:w-5/6 w-4/5 sm:w-4/6 leading-10 lg:text-base md:text-sm text-center'>El revolucionario framework de JavaScript, creado por Google, que te permite desarrollar aplicaciones web dinámicas. ¡Impulsa tu productividad y lleva tus proyectos web al siguiente nivel con AngularJS!</h4>
+          </div>
 
         </div>
 
-      </section>
+        <div className='flex  mt-10 lg:flex-row flex-col h-full lg:h-[60vh] items-center text-white gap-y-9 lg:gap-x-4 z-[2] relative px-5 sm:px-11 w-full'>
+
+          <div data-aos="flip-left" className='border-4 lg:pt-5 w-11/12 lg:w-2/5  shadow-2xl relative h-full lg:h-[50vh] rounded-sm borde-outset py-14 lg:p-3  flex justify-center flex-col items-center gap-y-4  '>
+            <Image className='-translate-y-9 top-0 absolute' src='icon/angular.svg' alt="angular" width={70} height={70} ></Image>
+            <h2 className='titulo capitalize text-lg font-bold' >AngularJS</h2>
+            <h4 className='subtitulo lg:w-5/6 w-4/5 sm:w-4/6 leading-10 lg:text-base md:text-sm text-center'>El revolucionario framework de JavaScript, creado por Google, que te permite desarrollar aplicaciones web dinámicas. ¡Impulsa tu productividad y lleva tus proyectos web al siguiente nivel con AngularJS!</h4>
+          </div>
+
+        </div> */}
+
+    </section >
+
+    {/* <Footer/> */}
+     
 
     </>
   )

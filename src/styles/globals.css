@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
+:root {
     overflow-x: hidden;
     width: 100%;
 }
-html, body {
+
+html,
+body {
     width: 100%;
 }
 
@@ -38,6 +40,7 @@ html, body {
 .text_shadow_ps {
     text-shadow: 2px -8px 1px #a2125d;
 }
+
 .text_shadow_cv {
     text-shadow: 2px -8px 1px #6c10c3;
 }
@@ -69,7 +72,7 @@ html, body {
 
 .glass {
     position: relative;
-    width: 500px;
+    width: 80%;
     height: 450px;
     background: inherit;
     border-radius: 5%;
@@ -78,7 +81,7 @@ html, body {
 
 .glass::after {
     content: " ";
-    width: 500px;
+    width: 80%;
     height: 450px;
     background: inherit;
     position: absolute;
@@ -99,21 +102,20 @@ html, body {
 }
 
 .fondoColor-black {
-    background: linear-gradient(180deg,
-            rgb(0, 0, 0, 0.55) 50%,
-            rgba(0, 0, 0, 0.55) 50%);
+    background: linear-gradient(180deg, #2e0a51 2%, rgba(0, 0, 0, 0) 80%);
     z-index: 1;
 }
 
-.sizeImage{
+.sizeImage {
     background-size: 100% 100% !important;
 }
 
-.borde-inset{
+.borde-inset {
 
     border-style: inset;
 }
-.borde-outset{
+
+.borde-outset {
 
     border-style: outset;
 }
@@ -128,7 +130,7 @@ html, body {
         border-radius: 5%;
         overflow: hidden;
     }
-    
+
     .vidrio::after {
         content: " ";
         width: 250px;
@@ -139,7 +141,7 @@ html, body {
         box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.05);
         filter: blur(10px);
     }
-    
+
     .glass {
         position: relative;
         width: 300px;
@@ -148,7 +150,7 @@ html, body {
         border-radius: 5%;
         overflow: hidden;
     }
-    
+
     .glass::after {
         content: " ";
         width: 300px;
@@ -173,8 +175,9 @@ html, body {
     background-image: url("/image/nav-arrow.png") !important;
     background-repeat: no-repeat;
     background-position: center;
-  }
-  .swiper-button-prev {
+}
+
+.swiper-button-prev {
     color: transparent !important;
     width: 50px !important;
     font-weight: 300;
@@ -184,13 +187,16 @@ html, body {
     background-image: url("/image/nav-arrow.png") !important;
     background-repeat: no-repeat;
     background-position: center;
-  }
-  .swiper-pagination-bullet-active {
+}
+
+.swiper-pagination-bullet-active {
     background-color: aliceblue !important;
-  }
-  .swiper-pagination-bullet {
+}
+
+.swiper-pagination-bullet {
     border: 3px solid #fff;
-  }
-  .swiper-pagination {
+}
+
+.swiper-pagination {
     margin-bottom: 2.5rem;
-  }
+}
