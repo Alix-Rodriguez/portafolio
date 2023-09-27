@@ -7,6 +7,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { Footer } from '../components/Footer';
+import Head from 'next/head';
 
 
 
@@ -47,6 +48,12 @@ export default function Home() {
 
   return (
     <>
+
+      <Head>
+        <title>Start - Tech</title>
+        <link rel="icon" href="/logo/logo7.png" />
+      </Head>
+
       <FloatingWhatsApp
         phoneNumber="+584120532998"
         avatar="/logo/logo1.png"
@@ -63,7 +70,7 @@ export default function Home() {
 
 
       {/* PRIMERA SECCION */}
-      <section id='inicio'  className='text-white bg-[#04143c] relative h-full '>
+      <section id='inicio' className='text-white bg-[#04143c] relative h-full '>
         <div className='h-full  w-full   absolute fondoColor'></div>
         <div className='h-full  w-full -rotate-180 absolute fondoColor'></div>
 
@@ -267,10 +274,10 @@ export default function Home() {
         </div>
 
 
-    </section >
+      </section >
 
-    <Footer/> 
-     
+      <Footer />
+
 
     </>
   )
