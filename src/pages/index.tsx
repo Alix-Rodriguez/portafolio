@@ -131,7 +131,6 @@ export default function Home() {
         <div id="servicio" className='text-white pb-3 relative h-full lg:h-screen'>
 
         <Image src="/logo/logo6.png" className='absolute bottom-14' alt="start-tech  logo" width={250} height={1}></Image>
-        <Image src="/logo/logo6.png" className='absolute top-14 right-10' alt="start-tech logo" width={250} height={1}></Image>
 
           <div className='flex justify-center z-[2] relative pt-7'>
             <h1 className='titulo capitalize text-xl sm:text-3xl font-semibold'>
@@ -190,7 +189,6 @@ export default function Home() {
         <div className='h-full lg:h-screen w-full absolute fondoColor'></div>
         <div className='h-full  w-full rotate-180  absolute fondoColor-black'></div>
         <Image src="/logo/logo6.png" className='absolute bottom-14' alt="start-tech  logo" width={250} height={1}></Image>
-        <Image src="/logo/logo6.png" className='absolute top-14 right-10' alt="start-tech logo" width={250} height={1}></Image>
         
         <div className='flex justify-center z-[2] relative pt-7'>
           <h1 className='titulo capitalize text-xl sm:text-3xl font-semibold'>
@@ -232,8 +230,6 @@ export default function Home() {
 
       <section style={{ background: `url("image/galaxia.png")` }} id='nosotros' className='h-full pb-7 sizeImage relative'>
         <div className='h-full  w-full   absolute fondoColor-black'></div>
-        <Image src="/logo/logo6.png" className='absolute bottom-14' alt="start-tech  logo" width={250} height={1}></Image>
-        <Image src="/logo/logo6.png" className='absolute top-14 right-10' alt="start-tech logo" width={250} height={1}></Image>
 
         <div className='flex justify-center z-[2] text-white relative pt-7'>
           <h1 className='titulo capitalize text-xl sm:text-3xl font-semibold'>
