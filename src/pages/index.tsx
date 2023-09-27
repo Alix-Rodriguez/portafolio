@@ -74,16 +74,15 @@ export default function Home() {
 
 
       {/* PRIMERA SECCION */}
-      <section id='inicio' className='text-white bg-[#04143c] relative h-full '>
+      <section id='inicio' style={{background:`linear-gradient(90deg, rgba(22,50,111,1) 35%, rgba(44,87,177,1) 80%)`}} className='text-white  relative h-full '>
         <div className='h-full  w-full   absolute fondoColor'></div>
         <div className='h-full  w-full -rotate-180 absolute fondoColor'></div>
+        
 
-
+        {/* bg-[#04143c] */}
         <div className='text-white relative h-full lg:h-screen'>
 
-
-          {/* <div className='h-full lg:h-screen w-full -rotate-180 absolute fondoColor'></div> */}
-
+      
 
           <div className='flex justify-center z-[2] relative pt-7'>
             <h1 className='titulo capitalize text-xl sm:text-3xl font-semibold'>
@@ -117,7 +116,7 @@ export default function Home() {
             </div>
 
             <div data-aos={`fade-down`} className='border-4 shadow-2xl h-[90%] rounded-sm borde-inset p-7  flex justify-center flex-col items-center gap-y-10'>
-              <Image src='icon/google.svg' alt="Google" width={70} height={70} ></Image>
+              <Image src='/icon/seo.png' alt="Google" width={100} height={100} ></Image>
               <h2 className='titulo capitalize font-bold text-lg '>Seo</h2>
               <h4 className='w-11/12 subtitulo text-center'>¡Eleva tu negocio con nuestro servicio de SEO para Google! Optimizamos tu sitio con palabras clave relevantes, mejorando tu posición en los resultados de búsqueda y atrayendo más clientes. ¡Contáctanos hoy!</h4>
             </div>
@@ -131,7 +130,8 @@ export default function Home() {
 
         <div id="servicio" className='text-white pb-3 relative h-full lg:h-screen'>
 
-
+        <Image src="/logo/logo6.png" className='absolute bottom-14' alt="start-tech  logo" width={250} height={1}></Image>
+        <Image src="/logo/logo6.png" className='absolute top-14 right-10' alt="start-tech logo" width={250} height={1}></Image>
 
           <div className='flex justify-center z-[2] relative pt-7'>
             <h1 className='titulo capitalize text-xl sm:text-3xl font-semibold'>
@@ -189,7 +189,9 @@ export default function Home() {
 
         <div className='h-full lg:h-screen w-full absolute fondoColor'></div>
         <div className='h-full  w-full rotate-180  absolute fondoColor-black'></div>
-
+        <Image src="/logo/logo6.png" className='absolute bottom-14' alt="start-tech  logo" width={250} height={1}></Image>
+        <Image src="/logo/logo6.png" className='absolute top-14 right-10' alt="start-tech logo" width={250} height={1}></Image>
+        
         <div className='flex justify-center z-[2] relative pt-7'>
           <h1 className='titulo capitalize text-xl sm:text-3xl font-semibold'>
             <Typewriter
@@ -230,7 +232,8 @@ export default function Home() {
 
       <section style={{ background: `url("image/galaxia.png")` }} id='nosotros' className='h-full pb-7 sizeImage relative'>
         <div className='h-full  w-full   absolute fondoColor-black'></div>
-
+        <Image src="/logo/logo6.png" className='absolute bottom-14' alt="start-tech  logo" width={250} height={1}></Image>
+        <Image src="/logo/logo6.png" className='absolute top-14 right-10' alt="start-tech logo" width={250} height={1}></Image>
 
         <div className='flex justify-center z-[2] text-white relative pt-7'>
           <h1 className='titulo capitalize text-xl sm:text-3xl font-semibold'>

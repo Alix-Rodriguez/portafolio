@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { useState } from "react"
+import { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GrClose } from "react-icons/gr";
 import Link from 'next/link'
@@ -7,36 +7,49 @@ import Link from 'next/link'
 export const Menu = () => {
   const [click, setClick] = useState<Boolean>(true)
 
+  let [visible, setVisible] = useState(false)
+
+  useEffect(() => {
+    const Visible = () => {
+      if (window.scrollY >= 90) {
+        setVisible(true)
+      } else {
+        setVisible(false)
+      }
+    };
+    window.addEventListener("scroll", Visible);
+  }, []);
 
 
 
   return (
     <>
 
-      <nav style={{ background: ' #0e318fcf   ' }} className="transition-all fixed sm:relative  glass-menu w-full  z-[5]">
+      <nav style={{ background: ' #16326f  ' }} className={` ${visible ? 'fixed' : 'relative'} transition-all    glass-menu w-full  z-[5]`}>
         <div className="glass-effect">
         </div>
 
-        <div className="md:hidden h-16 flex justify-around items-center ">
+        <div className={`md:hidden ${visible ? 'h-9' : 'h-16 '} transition_menu_height h-16 flex justify-around items-center `}>
 
           <Link href='#up'>
-            <Image src="/logo/logo3.png" alt="logo" width={150} height={60} />
+            <Image className={` ${visible ? 'w-20' : ''} transition_menu_width `} src="/logo/logo3.png" alt="logo" width={150} height={60} />
           </Link>
 
           <RxHamburgerMenu onClick={() => setClick(!click)} className={`text-white ${click ? '' : 'hidden'}`} size="2.5rem" />
         </div>
 
-        <div className=" w-full h-20 hidden md:flex justify-center items-center">
-          <ul className="text-white flex w-11/12 justify-between items-center">
+        <div className={`transition_menu_height ${visible ? 'h-12' : 'h-20'} w-full  hidden md:flex justify-center items-center`}>
+
+          <ul className="text-white font-bold flex w-11/12 justify-between items-center">
             <Link className="hover:underline" href='#inicio'>
               <li>INICIO</li>
             </Link>
             <Link className="hover:underline" href='#nosotros'>
               <li>NOSOTROS</li>
             </Link>
-            <Link  href='#up'>
+            <Link href='#up'>
               <li>
-                <Image src="/logo/logo3.png" alt="logo" width={180} height={60} />
+                <Image className={` ${visible ? 'w-28' : ''} transition_menu_width`} src="/logo/logo3.png" alt="logo" width={180} height={60} />
               </li>
             </Link>
             <Link className="hover:underline" href='#servicio'>
@@ -61,7 +74,7 @@ export const Menu = () => {
           <GrClose onClick={() => setClick(!click)} className={`animate-pulse ${!click ? '' : 'hidden'}`} size="2.5rem" />
         </div>
 
-        <ul className=' text-white flex basis-96 -translate-y-8 flex-col lg:hidden items-center justify-around '>
+        <ul className=' text-white font-bold flex basis-96 -translate-y-8 flex-col lg:hidden items-center justify-around '>
 
           <Link href='#inicio'>
             <li>INICIO</li>

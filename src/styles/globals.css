@@ -17,6 +17,13 @@ body {
     scroll-behavior: smooth;
 }
 
+.transition_menu_width{
+    transition: width 1s ease-out;
+}
+
+.transition_menu_height{
+    transition: height 1s ease-out;
+}
 
 /*TODO: PARA TITULOS font-family: 'Roboto Mono', monospace; */
 
@@ -52,7 +59,7 @@ body {
 
 
 .glass-menu {
-    box-shadow: inset 5px 5px 20px 3px #04a7cd !important;
+    box-shadow: inset 5px 5px 20px 3px #2c57b1  !important;
 }
 
 .vidrio {
