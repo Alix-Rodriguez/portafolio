@@ -130,7 +130,6 @@ export default function Home() {
 
         <div id="servicio" className='text-white pb-3 relative h-full lg:h-screen'>
 
-        <Image src="/logo/logo6.png" className='absolute bottom-14' alt="start-tech  logo" width={250} height={1}></Image>
 
           <div className='flex justify-center z-[2] relative pt-7'>
             <h1 className='titulo capitalize text-xl sm:text-3xl font-semibold'>
