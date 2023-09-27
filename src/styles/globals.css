@@ -77,18 +77,11 @@ body {
     background: inherit;
     border-radius: 5%;
     overflow: hidden;
+    background: #0422aa9c;
+
 }
 
-.glass::after {
-    content: " ";
-    width: 80%;
-    height: 450px;
-    background: inherit;
-    position: absolute;
-    top: 0;
-    box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.05);
-    filter: blur(10px);
-}
+
 
 .shadow-2xl {
     box-shadow: 0px 30px 30px 20px rgba(0, 0, 0, 0.185);
@@ -120,6 +113,8 @@ body {
     border-style: outset;
 }
 
+
+
 @media (max-width: 520px) {
 
     .vidrio {
@@ -129,18 +124,11 @@ body {
         background: inherit;
         border-radius: 5%;
         overflow: hidden;
+        box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.05);
+
     }
 
-    .vidrio::after {
-        content: " ";
-        width: 250px;
-        height: 400px;
-        background: inherit;
-        position: absolute;
-        top: 0;
-        box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.05);
-        filter: blur(10px);
-    }
+
 
     .glass {
         position: relative;

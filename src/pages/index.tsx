@@ -63,7 +63,7 @@ export default function Home() {
 
 
       {/* PRIMERA SECCION */}
-      <section id='inicio' style={{ background: `url("image/galaxia.png")` }} className='text-white relative h-full border-t-2 border-black border-solid'>
+      <section id='inicio'  className='text-white bg-[#04143c] relative h-full '>
         <div className='h-full  w-full   absolute fondoColor'></div>
         <div className='h-full  w-full -rotate-180 absolute fondoColor'></div>
 
@@ -217,7 +217,7 @@ export default function Home() {
 
       {/* CUARTA SECCION */}
 
-      <section style={{ background: `url("image/fondo.png")` }} id='nosotros' className='h-full pb-7 sizeImage relative'>
+      <section style={{ background: `url("image/galaxia.png")` }} id='nosotros' className='h-full pb-7 sizeImage relative'>
         <div className='h-full  w-full   absolute fondoColor-black'></div>
 
 
@@ -242,7 +242,7 @@ export default function Home() {
 
         <div className='h-[60vh] lg:h-[80vh] flex flex-col items-center justify-center w-full '>
 
-          <div data-aos="zoom-in-up" style={{ background: `url("image/fondo.png")` }} className="glass sizeImage  relative z-[3] flex text-justify justify-center items-center">
+          <div data-aos="zoom-in-up" className="glass sizeImage  relative z-[3] flex text-justify justify-center items-center">
 
             <div className="z-10 h-4/5 w-11/12  flex justify-center items-center">
               <h3 className="subtitulo  leading-loose text-white font-bold text-xs sm:text-base capitalize">
@@ -320,7 +320,7 @@ export default function Home() {
 
     </section >
 
-    {/* <Footer/> */}
+    <Footer/> 
      
 
     </>
