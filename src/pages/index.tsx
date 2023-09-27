@@ -50,7 +50,7 @@ export default function Home() {
     <>
 
       <Head>
-        <title>Start - Tech</title>
+        <title>Start Tech - Technology</title>
         <link rel="icon" href="/logo/logo7.png" />
       </Head>
 
