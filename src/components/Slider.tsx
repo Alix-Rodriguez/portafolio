@@ -23,7 +23,7 @@ export const Slider = () => {
     return (
         <>
            
-                        <div
+                        <div id="principal"
                             className="flex relative flex-col justify-center items-center leading-none h-[50vh] lg:h-[100vh] w-screen bg-no-repeat 
                              "
                             style={{backgroundImage: `url('image/start.gif')`, backgroundSize: '100% 100%', backgroundPosition:'center center'}}

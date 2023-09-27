@@ -3,8 +3,6 @@ import { useState } from "react"
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GrClose } from "react-icons/gr";
 import Link from 'next/link'
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
 
 export const Menu = () => {
   const [click, setClick] = useState<Boolean>(true)

@@ -8,6 +8,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { Footer } from '../components/Footer';
 import Head from 'next/head';
+import {Flotante} from '../components/Flotante'
 
 
 
@@ -54,6 +55,8 @@ export default function Home() {
         <link rel="icon" href="/logo/logo7.png" />
         <meta name="description" content="Desarrollo web Diseño Publicidad Marketing" />
       </Head>
+
+      <Flotante/>
 
       <FloatingWhatsApp
         phoneNumber="+584120532998"
