@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <>
       <FloatingWhatsApp
-        phoneNumber="+584248428780"
+        phoneNumber="+584120532998"
         avatar="/logo/logo1.png"
         accountName="Start - Tech"
         statusMessage="Donde Las Ideas Cobran Vida"
@@ -266,57 +266,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* creemos en la creación de soluciones digitales que no solo cumplen, sino que superan las expectativas de nuestros clientes. Ya sea que esté buscando desarrollar un sitio web desde cero, rediseñar un sitio web existente o crear gráficos impresionantes, Start - Tech es su socio confiable. */}
-
-        {/* </div> */}
-
-        {/* <div className='flex justify-center z-[2] text-white relative pt-7'>
-          <h1 className='titulo capitalize text-xl sm:text-3xl font-semibold'>
-            <Typewriter
-              options={{
-                loop: true,
-              }}
-              onInit={(typewriter) => {
-                typewriter
-                  .typeString("Trabajos Realizados")
-                  .pauseFor(2000)
-                  .deleteAll()
-                  .start();
-              }}
-            />
-          </h1>
-        </div> */}
-
-
-
-        {/* <div className='flex  mt-10 lg:flex-row flex-col h-full lg:h-[60vh] items-center text-white gap-y-9 lg:gap-x-4 z-[2] relative px-5 sm:px-11 w-full'>
-
-          <div data-aos="flip-left" className='border-4 lg:pt-5 w-11/12 lg:w-2/5  shadow-2xl relative h-full lg:h-[50vh] rounded-sm borde-outset py-14 lg:p-3  flex justify-center flex-col items-center gap-y-4  '>
-            <Image className='-translate-y-9 top-0 absolute' src='icon/angular.svg' alt="angular" width={70} height={70} ></Image>
-            <h2 className='titulo capitalize text-lg font-bold' >AngularJS</h2>
-            <h4 className='subtitulo lg:w-5/6 w-4/5 sm:w-4/6 leading-10 lg:text-base md:text-sm text-center'>El revolucionario framework de JavaScript, creado por Google, que te permite desarrollar aplicaciones web dinámicas. ¡Impulsa tu productividad y lleva tus proyectos web al siguiente nivel con AngularJS!</h4>
-          </div>
-
-        </div>
-        <div className='flex  mt-10 lg:flex-row flex-col h-full lg:h-[60vh] justify-end items-center text-white gap-y-9 lg:gap-x-4 z-[2] relative px-5 sm:px-11 w-full'>
-
-          <div data-aos="flip-left" className='border-4 lg:pt-5 w-11/12 lg:w-2/5  shadow-2xl relative h-full lg:h-[50vh] rounded-sm borde-outset py-14 lg:p-3  flex justify-center flex-col items-center gap-y-4  '>
-            <Image className='-translate-y-9 top-0 absolute' src='icon/angular.svg' alt="angular" width={70} height={70} ></Image>
-            <h2 className='titulo capitalize text-lg font-bold' >AngularJS</h2>
-            <h4 className='subtitulo lg:w-5/6 w-4/5 sm:w-4/6 leading-10 lg:text-base md:text-sm text-center'>El revolucionario framework de JavaScript, creado por Google, que te permite desarrollar aplicaciones web dinámicas. ¡Impulsa tu productividad y lleva tus proyectos web al siguiente nivel con AngularJS!</h4>
-          </div>
-
-        </div>
-
-        <div className='flex  mt-10 lg:flex-row flex-col h-full lg:h-[60vh] items-center text-white gap-y-9 lg:gap-x-4 z-[2] relative px-5 sm:px-11 w-full'>
-
-          <div data-aos="flip-left" className='border-4 lg:pt-5 w-11/12 lg:w-2/5  shadow-2xl relative h-full lg:h-[50vh] rounded-sm borde-outset py-14 lg:p-3  flex justify-center flex-col items-center gap-y-4  '>
-            <Image className='-translate-y-9 top-0 absolute' src='icon/angular.svg' alt="angular" width={70} height={70} ></Image>
-            <h2 className='titulo capitalize text-lg font-bold' >AngularJS</h2>
-            <h4 className='subtitulo lg:w-5/6 w-4/5 sm:w-4/6 leading-10 lg:text-base md:text-sm text-center'>El revolucionario framework de JavaScript, creado por Google, que te permite desarrollar aplicaciones web dinámicas. ¡Impulsa tu productividad y lleva tus proyectos web al siguiente nivel con AngularJS!</h4>
-          </div>
-
-        </div> */}
 
     </section >
 
