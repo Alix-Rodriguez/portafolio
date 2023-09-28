@@ -51,7 +51,7 @@ export default function Home() {
     <>
 
       <Head>
-        <title>Start Tech - Technology</title>
+        <title>Start Tech - development</title>
         <link rel="icon" href="/logo/logo7.png" />
         <meta name="description" content="Desarrollo web Diseño Publicidad Marketing" />
       </Head>
