@@ -51,11 +51,10 @@ export default function Home() {
     <>
 
       <Head>
-        <title>Start Tech - development</title>
+        <title>Start Tech - technology</title>
         <link rel="icon" href="/logo/logo7.png" />
         <meta name="description" content="Desarrollo web Diseño Publicidad Marketing" />
       </Head>
-
       <Flotante/>
 
       <FloatingWhatsApp
@@ -153,7 +152,7 @@ export default function Home() {
             <div data-aos="flip-left" className='border-4 lg:pt-5  shadow-2xl relative h-[80%] rounded-sm borde-outset py-14 lg:p-3  flex justify-center flex-col items-center gap-y-4  '>
               <Image className='-translate-y-9 top-0 absolute' src='icon/angular.svg' alt="angular" width={70} height={70} ></Image>
               <h2 className='titulo capitalize text-lg font-bold' >AngularJS</h2>
-              <h4 className='subtitulo lg:w-5/6 w-4/5 sm:w-4/6 leading-10 lg:text-base md:text-sm text-center'>El revolucionario framework de JavaScript, creado por Google, que te permite desarrollar aplicaciones web dinámicas. ¡Impulsa tu productividad y lleva tus proyectos web al siguiente nivel con AngularJS!</h4>
+              <h4 className='subtitulo lg:w-5/6 w-4/5 sm:w-4/6 leading-10 lg:text-base md:text-sm text-center'>Es un framework de JavaScript creado por Google, que nos permite desarrollar aplicaciones web dinámicas. ¡Impulsa tu productividad y lleva tus proyectos web al siguiente nivel con AngularJS!</h4>
             </div>
 
             <div data-aos="flip-right" className='border-4 lg:pt-5  relative shadow-2xl h-[80%] rounded-sm borde-outset py-14 lg:p-3   flex justify-center flex-col items-center gap-y-4 '>
@@ -171,7 +170,7 @@ export default function Home() {
             <div data-aos="flip-down" className='border-4 lg:pt-5  relative shadow-2xl h-[80%] rounded-sm borde-outset py-14 lg:p-3   flex justify-center flex-col items-center gap-y-4 '>
               <Image className='-translate-y-9 top-0 absolute' src='icon/wordpress.svg' alt="wordpress" width={70} height={70} ></Image>
               <h2 className='titulo capitalize text-lg font-bold'>WordPress</h2>
-              <h4 className='lg:w-5/6 w-4/5 sm:w-4/6 leading-10  subtitulo lg:text-base md:text-sm text-center'>¡Crea tu sitio web con WordPress! Es un CMS gratuito y de código abierto, ideal para blogs, tiendas online y mucho más.</h4>
+              <h4 className='lg:w-5/6 w-4/5 sm:w-4/6 leading-10  subtitulo lg:text-base md:text-sm text-center'>¡Crea tu sitio web con WordPress! ideal para blogs, tiendas online y mucho más.</h4>
             </div>
 
 
@@ -211,13 +210,13 @@ export default function Home() {
           <div data-aos="flip-left" className='border-4 lg:pt-5  shadow-2xl relative h-[80%] rounded-sm borde-outset py-14 lg:p-3  flex justify-around flex-col items-center gap-y-4  '>
             <Image className='-translate-y-9 top-0 absolute' src='icon/canva.svg' alt="angular" width={70} height={70} ></Image>
             <h2 className='subtitulo_diseno capitalize text-6xl text_shadow_cv font-bold'>Canva</h2>
-            <h4 className='subtitulo lg:w-5/6 w-4/5 sm:w-4/6 leading-10 lg:text-base md:text-sm text-center'> es una herramienta en línea que permite diseñar de manera sencilla y rápida todo tipo de contenido gráfico, desde contenido para redes sociales hasta presentaciones, pósters, folletos y tarjetas de invitación.</h4>
+            <h4 className='subtitulo lg:w-5/6 w-4/5 sm:w-4/6 leading-10 lg:text-base md:text-sm text-center'> es una herramienta en línea permitido diseñar  todo tipo de contenido gráfico, desde contenido para redes sociales hasta presentaciones, pósters, folletos y tarjetas de invitación.</h4>
           </div>
 
           <div data-aos="flip-down" className='border-4 lg:pt-5  relative shadow-2xl h-[80%] rounded-sm borde-outset py-14 lg:p-3   flex justify-around flex-col items-center gap-y-4 '>
             <Image className='-translate-y-9 top-0 absolute' src='icon/ps.svg' alt="wordpress" width={70} height={70} ></Image>
             <h2 className='subtitulo_diseno text_shadow_ps text-6xl capitalize  font-bold' >Photoshop</h2>
-            <h4 className='lg:w-5/6 w-4/5 sm:w-4/6 leading-10  subtitulo lg:text-base md:text-sm text-center'>es un programa informático de edición de imagen desarrollado por Adobe Systems. Es la herramienta más completa de retoque fotográfico y es ampliamente utilizada en el diseño gráfico, diseño web, 3D y fotografía.</h4>
+            <h4 className='lg:w-5/6 w-4/5 sm:w-4/6 leading-10  subtitulo lg:text-base md:text-sm text-center'>Es la herramienta más completa de retoque fotográfico y la utilizamos en el diseño gráfico, diseño web, 3D y fotografía.</h4>
           </div>
 
 

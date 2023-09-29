@@ -18,11 +18,11 @@ body {
 }
 
 .transition_menu_width{
-    transition: width 1s ease-out;
+    transition: width .2s ease-out;
 }
 
 .transition_menu_height{
-    transition: height 1s ease-out;
+    transition: height .2s ease-out;
 }
 
 /*TODO: PARA TITULOS font-family: 'Roboto Mono', monospace; */

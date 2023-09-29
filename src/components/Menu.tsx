@@ -24,8 +24,8 @@ export const Menu = () => {
 
   return (
     <>
-
-      <nav style={{ background: ' #16326f  ' }} className={` ${visible ? 'fixed' : 'relative'} transition-all    glass-menu w-full  z-[5]`}>
+      
+      <nav style={{ background: ' #16326f  ' }} className={` transition-all    glass-menu w-full top-0 z-[5] fixed`}>
         <div className="glass-effect">
         </div>
 
