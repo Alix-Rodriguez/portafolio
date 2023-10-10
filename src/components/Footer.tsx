@@ -45,10 +45,10 @@ export const Footer = () => {
 
         <div className="w-full lg:w-[33%] gap-y-4 lg:gap-y-0 flex flex-col  items-center ">
           <div data-aos="flip-left">
-            <Image src="/logo/logo6.png" alt="start-tech logo" width={250} height={1}></Image>
+            <Image src="/logo/4.svg" alt="start-tech logo" width={220} height={1}></Image>
           </div>
 
-          <div className="flex basis-3/6 justify-center items-center">
+          <div className="flex basis-1/3 justify-center items-center">
           <Image  src="/icon/email.svg" alt="email" width={30} height={30}></Image>
             <a className="hover:underline" href="mailto:starttech0705@gmail.com">starttech0705@gmail.com</a>
           </div>

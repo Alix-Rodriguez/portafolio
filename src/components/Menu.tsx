@@ -25,10 +25,8 @@ export const Menu = () => {
   return (
     <>
       
-      <nav style={{ background: ' #16326f  ' }} className={` transition-all    glass-menu w-full top-0 z-[5] fixed`}>
-        <div className="glass-effect">
-        </div>
-
+      <nav className={` ${visible ? 'glass-menu bg-[#16326f]' : ''} transition-all  w-full top-0 z-[5] fixed`}>
+      
         <div className={`md:hidden ${visible ? 'h-9' : 'h-16 '} transition_menu_height h-16 flex justify-around items-center `}>
 
           <Link href='#up'>
@@ -49,7 +47,7 @@ export const Menu = () => {
             </Link>
             <Link href='#up'>
               <li>
-                <Image className={` ${visible ? 'w-28' : ''} transition_menu_width`} src="/logo/logo3.png" alt="logo" width={180} height={60} />
+                <Image className={` ${visible ? 'w-28' : ''} transition_menu_width`} src="/logo/5.svg" alt="logo" width={180} height={60} />
               </li>
             </Link>
             <Link className="hover:underline" href='#servicio'>
