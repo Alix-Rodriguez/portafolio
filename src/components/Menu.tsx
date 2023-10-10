@@ -24,16 +24,21 @@ export const Menu = () => {
 
   return (
     <>
-      
-      <nav className={` ${visible ? 'glass-menu bg-[#16326f]' : ''} transition-all  w-full top-0 z-[5] fixed`}>
-      
-        <div className={`md:hidden ${visible ? 'h-9' : 'h-16 '} transition_menu_height h-16 flex justify-around items-center `}>
+
+      <nav className={` ${visible ? 'glass-menu bg-[#16326f]' : ''}  pt-2 sm:pt-0 transition-all  w-full top-0 z-[5] fixed`}>
+
+        <div className={`md:hidden ${visible ? 'h-11' : 'h-16 '} transition_menu_height  flex justify-around items-center `}>
 
           <Link href='#up'>
-            <Image className={` ${visible ? 'w-20' : ''} transition_menu_width `} src="/logo/logo3.png" alt="logo" width={150} height={60} />
+            <Image className={` ${visible ? 'w-[6rem]' : ''} transition_menu_width `} src="/logo/5.svg" alt="logo" width={150} height={60} />
           </Link>
 
-          <RxHamburgerMenu onClick={() => setClick(!click)} className={`text-white ${click ? '' : 'hidden'}`} size="2.5rem" />
+          {/* <RxHamburgerMenu onClick={() => setClick(!click)} className={`text-white ${click ? '' : 'hidden'}`} size="2.5rem" /> */}
+          <button className="Button">
+            <div></div>
+            <div></div>
+            <div></div>
+          </button>
         </div>
 
         <div className={`transition_menu_height ${visible ? 'h-12' : 'h-20'} w-full  hidden md:flex justify-center items-center`}>
@@ -61,7 +66,7 @@ export const Menu = () => {
       </nav>
 
       {/* menu adaptado */}
-      <nav style={{ background: ' #0e318fcf   ' }} className={`bg-white z-[100] flex md:hidden  flex-col rounded-ee-full lg:hidden justify-center transition-all  items-center opacity-95 fixed  h-screen w-screen 
+      <nav style={{ background: ' #0e318fcf   ' }} className={`bg-white z-[100] flex md:hidden  flex-col rounded-ee-full lg:hidden  transition-all  items-center opacity-95 fixed  h-screen w-screen 
           ${!click ? '' : '-translate-x-full'}`}>
 
 
