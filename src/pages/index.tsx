@@ -173,9 +173,9 @@ export default function Home() {
       
         <div className='w-[90%] m-auto'>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 relative z-20 gap-4">
-            {img.map((item, index) => {
+            {img.map((item) => {
               return (
-                <div className='grid lg:grid-cols-1 lg:grid-rows-2 gap-4' key={index}>
+                <div data-aos="zoom-in-up" className='grid lg:grid-cols-1 lg:grid-rows-2 gap-4' key={item.id}>
                   <Image className='hover:scale-[1.5] transition-all' src={item.img} alt={item.alt} width={300} height={300} ></Image>
                   <Image className='hover:scale-[1.5] transition-all' src={item.img_movil} alt={item.alt} width={300} height={300} ></Image>
                 </div>
@@ -184,13 +184,8 @@ export default function Home() {
           </div>
         </div>
 
-
-     
-
-      
-
       </section >
-
+            
       <Footer />
 
       {/* ¡Bienvenido a su solución integral para el desarrollo web y el diseño gráfico!

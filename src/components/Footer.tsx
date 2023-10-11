@@ -40,12 +40,12 @@ export const Footer = () => {
     <>
 
 
-      <footer style={{ background: `linear-gradient(-90deg, rgba(15,15,23,1) 77%, rgba(18,28,79,1) 91%)` }} id="contacto" className=" text-white">
+      <footer  style={{ background: `linear-gradient(-90deg, rgba(15,15,23,1) 77%, rgba(18,28,79,1) 91%)` }} id="contacto" className=" text-white ">
       <div className=" h-full gap-y-14 lg:gap-y-0 lg:h-[60vh]  flex flex-col lg:flex-row justify-center py-8 px-5">
 
         <div className="w-full lg:w-[33%] gap-y-4 lg:gap-y-0 flex flex-col  items-center ">
-          <div data-aos="flip-left">
-            <Image src="/logo/4.svg" alt="start-tech logo" width={220} height={1}></Image>
+          <div >
+            <Image  src="/logo/4.svg" alt="start-tech logo" width={220} height={1}></Image>
           </div>
 
           <div className="flex basis-1/3 justify-center items-center">
@@ -56,7 +56,7 @@ export const Footer = () => {
         </div>
 
         <div className="w-full lg:w-[33%] gap-y-3 lg:gap-y-0  flex items-center lg:items-start flex-col justify-around">
-          <h3 data-aos="zoom-in-up" className=" font-bold titulo pl-5 uppercase text-lg  sm:text-2xl">Porque preferirnos?</h3>
+          <h3  className=" font-bold titulo pl-5 uppercase text-lg  sm:text-2xl">Porque preferirnos?</h3>
           <hr className="w-[35%] -translate-y-3   lg:-translate-y-10 border-[2px]  border-[#0e318fcf]" />
 
           <p className="basis-3/6  subtitulo font-medium text-center  w-[90%]">Porque, más que una empresa, somos un equipo comprometido con tu crecimiento y posicionamiento  para potenciar  tu marca en el mundo digital.</p>
@@ -64,7 +64,7 @@ export const Footer = () => {
         </div>
 
         <div className="w-full lg:w-[33%] flex flex-col gap-y-3 lg:gap-y-0 items-center lg:items-start justify-around">
-          <h3 data-aos="flip-right" className="uppercase font-bold titulo pl-5 text-lg  sm:text-2xl">Redes sociales</h3>
+          <h3  className="uppercase font-bold titulo pl-5 text-lg  sm:text-2xl">Redes sociales</h3>
           <hr className="w-[30%] -translate-y-3 lg:-translate-y-10 border-[2px]  border-[#0e318fcf]" />
         
    
