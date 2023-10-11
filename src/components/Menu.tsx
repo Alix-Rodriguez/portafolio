@@ -25,7 +25,7 @@ export const Menu = () => {
   return (
     <>
 
-      <nav className={` ${visible ? 'glass-menu bg-[#16326f]' : ''}  pt-2 sm:pt-0 transition-all  w-full top-0 z-[100] fixed`}>
+      <nav className={` ${visible ? 'glass-menu bg-[rgba(18,28,79,1)]' : ''}  pt-2 sm:pt-0 transition-all  w-full top-0 z-[100] fixed`}>
 
         <div className={`md:hidden ${visible ? 'h-11' : 'h-16 '} transition_menu_height  flex justify-around items-center `}>
 
@@ -65,7 +65,7 @@ export const Menu = () => {
       </nav>
 
       {/* menu adaptado */}
-      <nav style={{ background: ' #16326f   ' }} className={`bg-white z-40 flex md:hidden  flex-col rounded-ee-full lg:hidden  transition-all justify-center  items-center opacity-95 fixed  h-screen w-[65%] 
+      <nav style={{ background: ' rgba(15,15,23,1)   ' }} className={` z-40 flex md:hidden  flex-col rounded-ee-full lg:hidden  transition-all justify-center  items-center opacity-95 fixed  h-screen w-[65%] 
           ${!click ? '' : '-translate-x-full'}`}>
 
         <ul className=' text-white font-bold flex basis-96 -translate-y-8 flex-col lg:hidden items-center justify-around '>
