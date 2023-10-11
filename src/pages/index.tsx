@@ -125,10 +125,10 @@ export default function Home() {
       </section>
       {/* SEGUNDO SECCION */}
 
-      <section style={{ background: `url("image/tech.png")`, backgroundSize: '100% 100%' }} id="tecnologia" className='text-white pb-3 relative h-[65vh] lg:h-screen'>
+      <section style={{ backgroundImage: `url("image/tech.png")`, backgroundSize: '100% 100%' }} id="tecnologia" className='text-white pb-3 relative h-[65vh] parallax lg:h-screen'>
 
 
-        <div className='flex justify-center z-[2] relative pt-2'>
+        {/* <div className='flex justify-center z-[2] relative pt-2'>
           <h1 className='titulo capitalize text-xl sm:text-3xl font-semibold'>
             <Typewriter
               options={{
@@ -143,13 +143,7 @@ export default function Home() {
               }}
             />
           </h1>
-        </div>
-
-        <div className='flex h-4/5 mt-10 lg:flex-row flex-col items-center gap-y-9 lg:gap-x-4 z-[2] relative px-5 sm:px-11 w-full'>
-
-          
-
-        </div>
+        </div> */}
 
       </section>
 

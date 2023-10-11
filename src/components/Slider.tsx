@@ -24,8 +24,7 @@ export const Slider = () => {
         <>
            
                         <div id="principal"
-                            className="flex  relative flex-col justify-center items-center leading-none h-[65vh] object-cover lg:h-[100vh] w-screen bg-no-repeat 
-                             "
+                            className="flex parallax relative flex-col justify-center items-center leading-none h-[65vh] object-cover lg:h-[100vh] w-screen "
                             style={{backgroundImage: `url('image/start.png')`, backgroundSize: '100% 100%', backgroundPosition:'center center'}}
                         >
                             
