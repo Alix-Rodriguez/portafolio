@@ -125,7 +125,7 @@ export default function Home() {
       </section>
       {/* SEGUNDO SECCION */}
 
-      <section style={{ backgroundImage: `url("image/tech.png")`, backgroundSize: '100% 100%' }} id="tecnologia" className='text-white pb-3 relative h-[65vh] parallax lg:h-screen'>
+      <section style={{ backgroundImage: `url("image/tech.png")`, backgroundSize: 'conver' }} id="tecnologia" className='text-white pb-3 relative h-[65vh] parallax lg:h-screen'>
 
 
         {/* <div className='flex justify-center z-[2] relative pt-2'>
