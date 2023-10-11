@@ -125,7 +125,7 @@ export default function Home() {
       </section>
       {/* SEGUNDO SECCION */}
 
-      <section style={{ backgroundImage: `url("image/tech.png")`, backgroundPosition:'top' }} id="tecnologia" className='text-white pb-3 relative h-[40vh] sizeImage parallax lg:h-screen'>
+      <section style={{ backgroundImage: `url("image/tech.png")`, backgroundPosition:'center center' }} id="tecnologia" className='text-white pb-3 relative h-[40vh] sizeImage parallax lg:h-screen'>
 
 
       </section>
