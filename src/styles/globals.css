@@ -71,6 +71,12 @@ body {
     background-size: 100% 100% !important;
 }
 
+@media (max-width: 600px) {
+    .sizeImage {
+        background-size: 100% 41% !important;
+    }
+}
+
 .borde-inset {
 
     border-style: inset;
@@ -143,7 +149,7 @@ body {
   }
 
   .parallax{
-    background: #fff fixed no-repeat 50% 50% ;
+    background: rgba(15,15,23,1)  fixed no-repeat 50% 50% ;
     background-size:cover ;
   }
 

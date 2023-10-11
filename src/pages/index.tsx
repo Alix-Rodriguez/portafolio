@@ -125,25 +125,8 @@ export default function Home() {
       </section>
       {/* SEGUNDO SECCION */}
 
-      <section style={{ backgroundImage: `url("image/tech.png")`, backgroundSize: '100% 100%' }} id="tecnologia" className='text-white pb-3 relative h-[40vh] parallax lg:h-screen'>
+      <section style={{ backgroundImage: `url("image/tech.png")`, backgroundPosition:'top' }} id="tecnologia" className='text-white pb-3 relative h-[40vh] sizeImage parallax lg:h-screen'>
 
-
-        {/* <div className='flex justify-center z-[2] relative pt-2'>
-          <h1 className='titulo capitalize text-xl sm:text-3xl font-semibold'>
-            <Typewriter
-              options={{
-                loop: true,
-              }}
-              onInit={(typewriter) => {
-                typewriter
-                  .typeString("Las tecnologías que usamos")
-                  .pauseFor(2000)
-                  .deleteAll()
-                  .start();
-              }}
-            />
-          </h1>
-        </div> */}
 
       </section>
 
