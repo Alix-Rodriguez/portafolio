@@ -42,6 +42,12 @@ export const img = [
     img:"/image/pc_tech.png",
     img_movil:"/image/movil_tech.png"
    },
+   {
+    id:8,  
+    alt:"jirehpro",
+    img:"/image/pc_jire.png",
+    img_movil:"/image/movil_jire.png"
+   },
 
 
 ]
