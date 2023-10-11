@@ -40,7 +40,7 @@ export const Footer = () => {
     <>
 
 
-      <footer id="contacto" className="bg-[#0c0c0c] text-white">
+      <footer style={{ background: `linear-gradient(-90deg, rgba(15,15,23,1) 77%, rgba(18,28,79,1) 91%)` }} id="contacto" className=" text-white">
       <div className=" h-full gap-y-14 lg:gap-y-0 lg:h-[60vh]  flex flex-col lg:flex-row justify-center py-8 px-5">
 
         <div className="w-full lg:w-[33%] gap-y-4 lg:gap-y-0 flex flex-col  items-center ">

@@ -25,7 +25,7 @@ export const Menu = () => {
   return (
     <>
 
-      <nav className={` ${visible ? 'glass-menu bg-[#16326f]' : ''}  pt-2 sm:pt-0 transition-all  w-full top-0 z-[5] fixed`}>
+      <nav className={` ${visible ? 'glass-menu bg-[#16326f]' : ''}  pt-2 sm:pt-0 transition-all  w-full top-0 z-[100] fixed`}>
 
         <div className={`md:hidden ${visible ? 'h-11' : 'h-16 '} transition_menu_height  flex justify-around items-center `}>
 
@@ -33,12 +33,11 @@ export const Menu = () => {
             <Image className={` ${visible ? 'w-[6rem]' : ''} transition_menu_width `} src="/logo/5.svg" alt="logo" width={150} height={60} />
           </Link>
 
-          {/* <RxHamburgerMenu onClick={() => setClick(!click)} className={`text-white ${click ? '' : 'hidden'}`} size="2.5rem" /> */}
-          <button className="Button">
-            <div></div>
-            <div></div>
-            <div></div>
-          </button>
+         <button onClick={() => setClick(!click)} className={` Button`}>
+              <div className={`${!click ? 'div1' : ''} `}></div>
+              <div className={`${!click ? 'div2' : ''} `}></div>
+              <div className={`${!click ? 'div3' : ''} `}></div>
+            </button>
         </div>
 
         <div className={`transition_menu_height ${visible ? 'h-12' : 'h-20'} w-full  hidden md:flex justify-center items-center`}>
@@ -47,16 +46,16 @@ export const Menu = () => {
             <Link className="hover:underline" href='#inicio'>
               <li>INICIO</li>
             </Link>
-            <Link className="hover:underline" href='#nosotros'>
-              <li>NOSOTROS</li>
+            <Link className="hover:underline" href='#portafolio'>
+              <li>PORTAFOLIO</li>
             </Link>
             <Link href='#up'>
               <li>
                 <Image className={` ${visible ? 'w-28' : ''} transition_menu_width`} src="/logo/5.svg" alt="logo" width={180} height={60} />
               </li>
             </Link>
-            <Link className="hover:underline" href='#servicio'>
-              <li>SERVICIOS</li>
+            <Link className="hover:underline" href='#tecnologia'>
+              <li>TECNOLOGIA</li>
             </Link>
             <Link className="hover:underline" href='#contacto'>
               <li>CONTACTO</li>
@@ -66,29 +65,21 @@ export const Menu = () => {
       </nav>
 
       {/* menu adaptado */}
-      <nav style={{ background: ' #0e318fcf   ' }} className={`bg-white z-[100] flex md:hidden  flex-col rounded-ee-full lg:hidden  transition-all  items-center opacity-95 fixed  h-screen w-screen 
+      <nav style={{ background: ' #16326f   ' }} className={`bg-white z-40 flex md:hidden  flex-col rounded-ee-full lg:hidden  transition-all justify-center  items-center opacity-95 fixed  h-screen w-[65%] 
           ${!click ? '' : '-translate-x-full'}`}>
-
-
-        <Link href='#up'>
-          <Image src="/logo/logo3.png" alt="logo" width={180} height={60} />
-        </Link>
-        <div className='bg-white absolute top-10 right-10  lg:hidden '>
-          <GrClose onClick={() => setClick(!click)} className={`animate-pulse ${!click ? '' : 'hidden'}`} size="2.5rem" />
-        </div>
 
         <ul className=' text-white font-bold flex basis-96 -translate-y-8 flex-col lg:hidden items-center justify-around '>
 
-          <Link href='#inicio'>
+          <Link onClick={() => setClick(!click)} href='#inicio'>
             <li>INICIO</li>
           </Link>
-          <Link href='#nosotros'>
-            <li>NOSOTROS</li>
+          <Link onClick={() => setClick(!click)} href='#portafolio'>
+            <li>PORTAFOLIO</li>
           </Link>
-          <Link href='#servicio'>
-            <li>SERVICIOS</li>
+          <Link onClick={() => setClick(!click)} href='#tecnologia'>
+            <li>TECNOLOGIA</li>
           </Link>
-          <Link href='#contacto'>
+          <Link onClick={() => setClick(!click)} href='#contacto'>
             <li>CONTACTO</li>
           </Link>
 
