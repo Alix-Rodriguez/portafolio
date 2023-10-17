@@ -51,7 +51,7 @@ export default function Home() {
     <>
 
       <Head>
-        <title>Start_Tech - Dev </title>
+        <title>Alix Rodriguez</title>
         <link rel="icon" href="/logo/logo7.png" />
         <meta name="description" content="Desarrollo web Diseño Publicidad Marketing" />
       </Head>
@@ -59,10 +59,10 @@ export default function Home() {
 
       <FloatingWhatsApp
         phoneNumber="+584120532998"
-        avatar="/logo/logo1.png"
-        accountName="Start - Tech"
-        statusMessage="Donde Las Ideas Cobran Vida"
-        chatMessage="Hola un gusto saludarle!!!. Como podemos ayudarle?  "
+        avatar="/logo/5.svg"
+        accountName="Alix Rodriguez"
+        statusMessage="Desarrollando lo que imaginas!!!"
+        chatMessage="Hola un gusto saludarle!!!. Como puedo ayudarle?  "
         placeholder="Escriba un mensaje..."
         allowClickAway={true}
         notification={true}
@@ -102,19 +102,19 @@ export default function Home() {
             <div data-aos={`zoom-out-right`} style={{ boxShadow: "5px 5px 20px 0px rgba(196, 163, 255, 1)" }} className='border-4   shadow-2xl h-[90%] rounded-sm borde-inset p-7  flex justify-center flex-col items-center gap-y-10'>
               <Image src='icon/compu.svg' alt="Computadora" width={70} height={70} ></Image>
               <h2 className='titulo capitalize font-bold text-lg ' >Desarrollo web</h2>
-              <h4 className='subtitulo w-11/12 text-center'>Nuestro equipo de trabajo puede desarrollar desde páginas tipo catálogo, las cuales muestran sus productos de una forma sencilla y efectiva, hasta sitios web en varios idiomas, todo de acuerdo con sus necesidades.</h4>
+              <h4 className='subtitulo w-11/12 text-center'>Puedo Desarrollar desde páginas tipo catálogo, las cuales muestran sus productos de una forma sencilla y efectiva, hasta sitios web en varios idiomas, todo de acuerdo a lo que nesecite.</h4>
             </div>
 
             <div data-aos={`zoom-in`} style={{ boxShadow: "5px 5px 20px 0px rgba(196, 163, 255, 1)" }} className='border-4  shadow-2xl h-[90%] rounded-sm borde-inset p-7  flex justify-center flex-col items-center gap-y-10'>
               <Image src='/icon/diseno.png' alt="Diseño" width={70} height={70} ></Image>
               <h2 className='titulo capitalize font-bold text-lg '>Diseño a la medida</h2>
-              <h4 className='w-11/12 subtitulo text-center'>¡Descubre el poder de un buen diseño web con nuestro servicio! En nuestro sitio, transformamos tus ideas en realidad digital. Nos especializamos en crear sitios web atractivos, intuitivos y de alto rendimiento que capturan la esencia de tu negocio y conectan con tus clientes.</h4>
+              <h4 className='w-11/12 subtitulo text-center'>¡Descubre el poder de un buen diseño web con mis servicios! transformo tus ideas en realidad digital. Me especialiso en crear sitios web atractivos, intuitivos y de alto rendimiento que capturan la esencia de tu negocio y conectan con tus clientes.</h4>
             </div>
 
             <div data-aos={`fade-down`} style={{ boxShadow: "5px 5px 20px 0px rgba(196, 163, 255, 1)" }} className='border-4 shadow-2xl h-[90%] rounded-sm borde-inset p-7  flex justify-center flex-col items-center gap-y-10'>
               <Image src='/icon/seo.png' alt="Google" width={100} height={100} ></Image>
               <h2 className='titulo capitalize font-bold text-lg '>Seo</h2>
-              <h4 className='w-11/12 subtitulo text-center'>¡Eleva tu negocio con nuestro servicio de SEO para Google! Optimizamos tu sitio con palabras clave relevantes, mejorando tu posición en los resultados de búsqueda y atrayendo más clientes. ¡Contáctanos hoy!</h4>
+              <h4 className='w-11/12 subtitulo text-center'>Optimizo sitios web con palabras clave relevantes, mejorando loa posición en los resultados de búsqueda y atrayendo más clientes.</h4>
             </div>
 
 

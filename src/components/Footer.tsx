@@ -45,38 +45,31 @@ export const Footer = () => {
 
         <div className="w-full lg:w-[33%] gap-y-4 lg:gap-y-0 flex flex-col  items-center ">
           <div >
-            <Image  src="/logo/4.svg" alt="start-tech logo" width={220} height={1}></Image>
+            <Image  src="/logo/5.svg" alt="start-tech logo" width={200} height={1}></Image>
           </div>
 
-          <div className="flex basis-1/3 justify-center items-center">
-          <Image  src="/icon/email.svg" alt="email" width={30} height={30}></Image>
-            <a className="hover:underline" href="mailto:starttech0705@gmail.com">starttech0705@gmail.com</a>
-          </div>
+       
 
         </div>
 
         <div className="w-full lg:w-[33%] gap-y-3 lg:gap-y-0  flex items-center lg:items-start flex-col justify-around">
-          <h3  className=" font-bold titulo pl-5 uppercase text-lg  sm:text-2xl">Porque preferirnos?</h3>
+          <h3  className=" font-bold titulo pl-5 uppercase text-lg  sm:text-2xl">Porque Elegirme?</h3>
           <hr className="w-[35%] -translate-y-3   lg:-translate-y-10 border-[2px]  border-[#0e318fcf]" />
 
-          <p className="basis-3/6  subtitulo font-medium text-center  w-[90%]">Porque, más que una empresa, somos un equipo comprometido con tu crecimiento y posicionamiento  para potenciar  tu marca en el mundo digital.</p>
+          <p className="basis-3/6  subtitulo font-medium text-center  w-[90%]">Porque más que un desarrollador, estoy comprometido con el crecimiento y éxito personal, buscando la forma de cada dia aprender cosas nuevas.</p>
 
         </div>
 
         <div className="w-full lg:w-[33%] flex flex-col gap-y-3 lg:gap-y-0 items-center lg:items-start justify-around">
-          <h3  className="uppercase font-bold titulo pl-5 text-lg  sm:text-2xl">Redes sociales</h3>
+          <h3  className="uppercase font-bold titulo pl-5 text-lg  sm:text-2xl">Contacto</h3>
           <hr className="w-[30%] -translate-y-3 lg:-translate-y-10 border-[2px]  border-[#0e318fcf]" />
         
-   
-        
-          <div className="basis-3/6 flex justify-around items-start w-[40%] sm:w-[30%] lg:w-[40%]">
-            <a href="https://www.facebook.com/profile.php?id=61551645911954" target="_black">
-              <Image style={{    filter: 'contrast(4.5)'}} src="/icon/face.svg" alt="redes sociales instagram" width={50} height={50}></Image>
-            </a>
-            <a href="https://instagram.com/start_techoficial?igshid=YTQwZjQ0NmI0OA==" target="_black">
-              <Image style={{    filter: 'contrast(1.5)'}} src="/icon/insta.svg" alt="redes sociales instagram" width={50} height={50}></Image>
-            </a>
+          <div className="flex basis-3/6  justify-center items-start gap-x-1">
+          <Image  src="/icon/email.svg" alt="email" width={30} height={30}></Image>
+            <a className="hover:underline" href="mailto:starttech0705@gmail.com">alixm.081@gmail.com</a>
           </div>
+        
+          
 
           
 
@@ -85,7 +78,7 @@ export const Footer = () => {
         </div>
 
         <div className="flex justify-center">
-          <h6 className="capitalize text-base sm:text-lg">© 2023 rights reserved desing by start - tech</h6>
+          <h6 className="capitalize text-base sm:text-lg">© 2023 rights reserved desing by Alix Rodriguez</h6>
           
         </div>
 
